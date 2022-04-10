@@ -79,6 +79,8 @@ header .form .input{
     color: #666;
     padding: 2px;
     width: 100%;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
 
 }
 header .form .submit{
@@ -86,6 +88,8 @@ header .form .submit{
     border: 1px solid #000;
     color: #666;
     width: 23px;
+    border-left: none;
+    border-radius: 0px 6px 6px 0px;
 }
 
 header div.top-header p{
@@ -215,7 +219,22 @@ i:hover{
 }
 
 
-
+@media (min-width:320px) and (max-width:425px){
+    .passwords,.identikit-container,.intereses{
+       width: 100%;
+       max-width: 90vw;
+    }
+    input#name,input#fechaNac,input#domicilio,input#password,input#password-verify{
+        max-width: 90vw;
+    }
+    .form2 button.loguearse{
+        width: 90vw;
+        max-width: 750px;
+    }
+    input#login-name{
+        max-width: 90vw;
+    }
+}
 
 @media (min-width: 361px){
     main section article .description{
@@ -230,6 +249,15 @@ i:hover{
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    input#password,input#login-name{
+        max-width: 90vw;
+        
+    }
+    .form2 button.loguearse{
+        width: 90vw;
+        max-width: 750px;
+    }
+    
 
 }
 
