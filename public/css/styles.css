@@ -72,7 +72,7 @@ header ul li a{
     color: #000;
 }
 
-header .form .input{
+header .form input{
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
@@ -82,6 +82,9 @@ header .form .input{
     border-right: none;
     border-radius: 6px 0 0 6px;
 
+}
+.form-container{
+    display: flex;
 }
 header .form .submit{
     background-color: #FFF;
@@ -313,6 +316,9 @@ i:hover{
     }
     .top-header .logo, .top-header .form, .top-header p{
         width: 33%;
+    }
+    header .form input{
+        width:20vw;
     }
 
 
